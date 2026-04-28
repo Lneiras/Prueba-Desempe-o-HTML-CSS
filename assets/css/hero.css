@@ -1,0 +1,59 @@
+
+
+.hero{
+    background-image:url(/assets/img/img-10.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-hero{
+    display: flex;  
+    flex-direction: column;
+    text-align: center;
+    align-items: center;  
+    gap: 1.5rem; 
+    padding: 1rem;  
+    margin-top: 3rem;
+    height: 100vh;
+    place-content: center;
+}
+
+.hero h2{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    color: var(--color-titulos-hero);
+    text-align: center;
+    line-height: 1.5;
+    font-size: 2.2rem;
+}
+.hero a{
+    background-color: var(--color-btn-hero);
+    color: var(--color-tex-btn-hero);
+    font-weight: bold;
+    border-style: none;
+    border-radius: 0.6rem;
+    gap: 20px;
+    padding:  0.6rem 2rem; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(230, 81, 81, 0.5);
+    font-size: 1rem;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+}
+
+.hero a:hover {
+    color: var(--color-hover-tex); /* color de la letra al pasar el mouse */
+    transition:  var(--transition); /* para suavizar el cambio de color */
+    background-color: var(--color-hover-btn);
+    box-shadow: 0 4px 10px whitesmoke;
+}

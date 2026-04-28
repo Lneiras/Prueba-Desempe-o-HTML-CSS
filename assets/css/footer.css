@@ -1,0 +1,19 @@
+
+footer{
+    display: flex;
+    gap: 2rem;     /*Espacio entre tarjetas: 20px horizontal y vertical */
+    margin-top: 2rem; /* espacio superior */
+    align-items: center;
+    justify-content: center; 
+}
+
+footer p{
+    color: var(--color-tex)
+}
+
+
+footer li a{
+    text-decoration: none;
+    color: var(--color-tex)
+}
+

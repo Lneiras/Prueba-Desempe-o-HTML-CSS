@@ -1,0 +1,78 @@
+@import "./header.css";
+@import "./hero.css";
+@import "./events.css";
+@import "./about.css";
+@import "./mutlimedia.css";
+@import "./footer.css";
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+    background-color: var(--color-fondo);
+    padding: 0px;
+    background-color: black;
+}
+
+.nunito{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root{
+    /*header*/
+    --color-logo: white;
+    --color-texto-encabezado: white;
+    --color-bckg-encabezado: black;
+    --color-hover-tex-encabezado: rgb(211, 54, 36);
+    --color-borde: rgb(255, 255, 255);
+    --transition:  color 0.2s;
+    /*btn menu*/
+    --backgorund-btn: white;
+    --backgorund-hover-btn: rgb(191, 69, 56);
+    /*hero*/
+    --color-titulos-hero: rgb(255, 0, 0);
+    --color-btn-hero:white;
+    --color-tex-btn-hero: black;
+    --color-hover-tex:red;
+    --color-hover-btn: black;
+    /*events*/
+    --color-titulo: red;
+    --color-tex: white;
+    --border-table: white;
+    --color-bckg-thead: rgb(238, 53, 53);
+}
+
+
+@media (max-width: 800px) {
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        padding: 1rem;
+        align-items: center;
+    }
+    .about {
+        display: flex; 
+        flex-direction: column;
+    }
+
+}
+
+/* pantallas normales */
+@media (min-width: 1024px) {
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+
+}

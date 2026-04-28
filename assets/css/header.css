@@ -1,0 +1,102 @@
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--color-bckg-encabezado);
+    color: var(--color-logo);
+    padding:  0 2rem; 
+    width: 100%;
+    height: 6rem;
+    border-bottom:  0.1rem solid var(--color-borde);
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+header .menu{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header .menu a { 
+    color:var(--color-texto-encabezado); /* color de la letra */
+    padding: 0.3rem; 
+    text-decoration: none; 
+    font-weight: solid;  
+}
+
+header .menu a:hover{
+    text-decoration:underline;
+    color: var(--color-hover-tex-encabezado);
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+
+.abrir-menu,
+.cerrar-menu{
+    display: none;
+}
+
+@media screen and (max-width: 870px){
+
+    .abrir-menu,
+    .cerrar-menu{
+        display: block;
+        font-size: 1.4rem;
+        cursor: pointer;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.5rem;
+        background-color: var(--backgorund-btn);
+        transition:  color 0.2s;
+    }
+
+    .abrir-menu:hover{
+        color: var(--color-hover-btn);  
+        transition:  var(--transition); 
+        background-color: var(--backgorund-hover-btn)
+    }
+
+    .cerrar-menu:hover{
+        color: var(--color-hover-btn); 
+        transition: var(transition);
+        background-color: var(--backgorund-hover-btn)
+    }
+
+    .menu{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end; 
+        position: absolute;
+        top: 0; 
+        right: 0; 
+        background-color: var(--color-bckg-encabezado);
+        padding: 2.5rem;
+        border-bottom: var(--color-borde); 
+        border-radius: 1rem;
+    }
+
+    .menu.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column; /*se muestra uno abajo de otro*/
+        align-items: end; /* lo alinea a la derecha */
+        gap: 1rem;
+    }
+
+    .menu a {
+        color: var(--color-texto-encabezado);
+        list-style: none;
+    }
+
+
+}
