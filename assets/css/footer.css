@@ -11,6 +11,9 @@ footer p{
     color: var(--color-tex)
 }
 
+footer li{
+    list-style: none;
+}
 
 footer li a{
     text-decoration: none;
