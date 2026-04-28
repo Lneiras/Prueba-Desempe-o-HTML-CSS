@@ -1,8 +1,8 @@
 
 
 .about{
-    display: flex; 
-    flex-direction: row;
+    display: flex;
+    flex-direction: column; /* Uno debajo de otro en móvil */
     text-align: center;
     align-items: center; 
     gap: 1.5rem; 
